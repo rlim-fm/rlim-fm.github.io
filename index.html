@@ -1,34 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Your Name - Personal Website</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Welcome to my personal website!</p>
-  </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Write a short bio here.</p>
-    </section>
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>Project 1 - Description</li>
-        <li>Project 2 - Description</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Contact</h2>
-      <p>Email: your.email@example.com</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Your Name</p>
-  </footer>
-</body>
-</html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <title>Richard Lim - Personal Website</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+        <header>
+          <h1>Richard Lim</h1>
+          <p>Computer Science and Mathematics @ Bowdoin College | NLP and Cognitive Science</p>
+        </header>
+        <main>
+          <!-- About Me Section -->
+          <section>
+            <h2>About Me</h2>
+            <p>
+              Hi! I'm a rising junior at
+              <a href="https://www.bowdoin.edu/" target="_blank" rel="noopener">Bowdoin College</a> in Brunswick, Maine,
+              majoring in Computer Science and Mathematics and minoring in psychology.
+              I am broadly interested in the intersections of computation, language, and cognition,
+              and am currently most passionate about advances in multimodal Natural Language Processing (NLP).
+              As a Gibbons Research Fellow with the Lexicon Lab at Bowdoin, I investigated age-related differences
+              in semantic fluency using computational modeling, which culminated in a poster presentation at the
+              Psychonomic Society's Annual Conference in New York. I lead the Quiz Bowl team at Bowdoin and work
+              at the Baldwin Center for Learning and Teaching as a Learning Assistant and Quantitative Tutor.
+            </p>
+          </section>
+
+          <!-- Projects Section -->
+          <section>
+            <h2>Research Experience</h2>
+            <ul>
+                <li>
+                  <h3>Sign Language NLP</h3>
+                  <p> <a href="https://arxiv.org/pdf/1301.3781" target="_blank" rel="noopener">Word2vec </a> transformed
+                    NLP by introducing a method to learn semantically meaningful word embeddings from large text corpora,
+                      and <a href="https://arxiv.org/pdf/1803.08976" target="_blank" rel="noopener">Speech2vec</a> proved that
+                      embeddings for spoken language could be even richer by incorporating features like tone and prosody.
+                    Could we extend this idea to sign language? I am currently working with Professor
+                      <a href="https://jeovafarias.github.io/" target="_blank" rel="noopener">Jeová Farias</a>
+                      to create a sign language embedding model that leverages specialized Graph Neural Networks (GNNs)
+                    to learn rich, expressive, and interpretable embeddings from sign language videos.</p>
+                </li>
+                <li>
+                  <h3>Modeling Search in the Mental Lexicon</h3>
+                  <p> How do we search for words in our brain? Does it change as we age? I worked with Professor
+                      <a href="https://abhilashak.weebly.com/" target="_blank" rel="noopener">Abhilasha Kumar</a> at the
+                      <a href="https://thelexiconlab.github.io/" target="_blank" rel="noopener">Lexicon Lab</a> at Bowdoin
+                        to investigate age-related differences in lexical retrieval using computational modeling. We used the
+                      `forager` model
+
+                    and the Lexicon Lab at Bowdoin to investigate age-related differences in semantic fluency using computational modeling.
+                    We used a random walk model on a semantic network constructed from human word association data to simulate the
+                    semantic fluency task, in which participants name as many items as possible from a given category (e.g., animals) in a limited time.
+                    Our model was able to replicate key patterns observed in human data, such as the number of words produced and the clustering of related words,
+                    and we found that older adults' performance could be explained by a smaller and less connected semantic network.
+                    This work culminated in a poster presentation at the Psychonomic Society's Annual Conference in New York.</p>
+                  </p>
+                </li>
+                <li>
+                  <h3>Nyhus Lab</h3>
+                  <p>.</p>
+                </li>
+            </ul>
+          </section>
+
+          <!-- Contact Section -->
+          <section>
+            <h2>Contact</h2>
+            <p>Email: rlim@bowdoin.edu</p>
+          </section>
+        </main>
+        <footer>
+          <p>&copy; 2025 Richard Lim</p>
+        </footer>
+      </body>
+      </html>
