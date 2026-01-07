@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Hi! My name is Richard Lim, and I'm a Junior at Bowdoin College majoring in Computer Science and Mathematics and minoring in psychology. Working at the intersections of computation, language, and cognition, I’m broadly interested in modeling how humans communicate across languages and modalities. I'm currently working with Professor Jeová Farias on developing techniques to learn mathematical representations of ASL to make recent advances in natural language processing (NLP) more accessible for users of sign languages. At Bowdoin, I lead the Quiz Bowl team and am a Learning Assistant and Quantitative Tutor at the Baldwin Center for Learning and Teaching.
+Hi! My name is Richard Lim, and I'm a junior at Bowdoin College majoring in Computer Science and Mathematics and minoring in psychology. My research interests lie at the intersection of Information Geometry and Representation Learning. I am motivated by a central question: How can we geometrically characterize the dynamics of how intelligent systems (artificial or biological) learn to represent complex concepts? 
+
+I am currently studying abroad at the [Budapest Semesters in Mathematics](https://www.budapestsemesters.com/) for the Spring 2026 semester. Back at Bowdoin, I lead the Quiz Bowl team and am a Learning Assistant and Quantitative Tutor at the Baldwin Center for Learning and Teaching.
 
 Current Research
 ======
