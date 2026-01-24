@@ -16,7 +16,7 @@ Current Research
 - **Tropical ANNs and Combinatorial Optimization (upcoming Summer 2026):** Visiting researcher at the [Naval Postgraduate School](https://nps.edu/) studying optimization landscapes of tropical artificial neural networks and their applications to combinatorial optimization problems. (Advisors: [Ruriko Yoshida, Ph.D.](https://polytopes.net/) and [Kenji Fukumizu, Ph.D.](https://www.ism.ac.jp/~fukumizu/))
 
 
-- **Optimization Geometry:** Analyzing the interaction between gradient-aligned regression (GAR) and capturing local geometry in high-dimensional optimization landscapes. (Advisor: [Jeová Farias, Ph.D.](https://jeovafarias.github.io/))
+- **LocalGAR: Local structure alignment in pairwise optimization objectives** Analyzing the interaction between gradient-aligned regression (GAR) and capturing local geometry in high-dimensional optimization landscapes. (Advisor: [Jeová Farias, Ph.D.](https://jeovafarias.github.io/))
                                             
 
 - **Sign Language Representation Learning:** Developing Sign2vec, an expressive embedding space for American Sign Language using Spatio-Temporal Graph Convolutional Networks (ST-GCNs). (Advisor: [Jeová Farias, Ph.D.](https://jeovafarias.github.io/))
