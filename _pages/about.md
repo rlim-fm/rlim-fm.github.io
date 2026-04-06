@@ -24,5 +24,6 @@ Current Research
 Past Research Projects
 ======
 - **Sign Language Representation Learning:** Worked on Sign2vec, an expressive embedding space for American Sign Language using Spatio-Temporal Graph Convolutional Networks (ST-GCNs). (Advisor: [Jeová Farias, Ph.D.](https://jeovafarias.github.io/))
-- 
+
+
 - **Memory Search and Semantic Retrieval:** Investigated the role of age and phonology in memory search using computational models of semantic retrieval. (Advisor: [Abhilasha A. Kumar, Ph.D.](https://abhilashak.weebly.com/))
