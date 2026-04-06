@@ -16,11 +16,13 @@ Current Research
 - **Tropical ANNs and Combinatorial Optimization (upcoming Summer 2026):** Visiting researcher at the [Naval Postgraduate School](https://nps.edu/). Studying optimization landscapes of tropical artificial neural networks and their applications to combinatorial optimization problems. (Advisors: [Ruriko Yoshida, Ph.D.](https://polytopes.net/) and [Kenji Fukumizu, Ph.D.](https://www.ism.ac.jp/~fukumizu/))
 
 
-- **LocalGAR: Local structure alignment in pairwise optimization objectives** Analyzing the interaction between gradient-aligned regression (GAR) and capturing local geometry in high-dimensional optimization landscapes. (Advisor: [Jeová Farias, Ph.D.](https://jeovafarias.github.io/))
+- **Clustered Mini-batching and Sampling Schemes for Stochastic Optimization:** Developing clustered mini-batching schemes for deep learning to capture local function geometry in high-dimensional optimization landscapes. In collaboration with [HUN-REN Institute for Computer Science and Control (SZTAKI)](https://sztaki.hun-ren.hu/en) in Budapest, Hungary. (Advisors: [Jeová Farias, Ph.D.](https://jeovafarias.github.io/), [András Benczúr, Ph.D.](https://sztaki.hun-ren.hu/en/organisation/departments/ilab/andras-benczur), and [Bálint Zoltán Daróczy, Ph.D.](https://sztaki.hun-ren.hu/en/organisation/departments/ilab/balint-zoltan-daroczy))
                                             
 
-- **Sign Language Representation Learning:** Developing Sign2vec, an expressive embedding space for American Sign Language using Spatio-Temporal Graph Convolutional Networks (ST-GCNs). (Advisor: [Jeová Farias, Ph.D.](https://jeovafarias.github.io/))
+
                                           
 Past Research Projects
 ======
+- **Sign Language Representation Learning:** Worked on Sign2vec, an expressive embedding space for American Sign Language using Spatio-Temporal Graph Convolutional Networks (ST-GCNs). (Advisor: [Jeová Farias, Ph.D.](https://jeovafarias.github.io/))
+- 
 - **Memory Search and Semantic Retrieval:** Investigated the role of age and phonology in memory search using computational models of semantic retrieval. (Advisor: [Abhilasha A. Kumar, Ph.D.](https://abhilashak.weebly.com/))
