@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Richard Lim"
   pronouns         : "He/Him"
-  bio              : "Junior at Bowdoin College majoring in Computer Science and Mathematics. Interested in information-geometric analyses of optimization dynamics in representation learning."
+  bio              : "Math/CS undergrad at Bowdoin College. Researching efficient sampling methods for manifold-aware ML and optimization methods for tropical NNs."
   location         : "Brunswick, Maine, USA"
   employer         : "Bowdoin College"
   uri              : # URL
