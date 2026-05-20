@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! My name is Richard Lim, and I'm a rising senior at Bowdoin College majoring in Computer Science and Mathematics and recent honors (kitüntetéssel) graduate of the [Budapest Semesters in Mathematics](https://www.budapestsemesters.com/). My research interests include optimization geometry, tropical neural networks, and representation learning.
+Hi! My name is Richard Lim, and I'm a rising senior at Bowdoin College majoring in Computer Science and Mathematics and recent honors graduate of the [Budapest Semesters in Mathematics](https://www.budapestsemesters.com/). My research interests include optimization geometry, tropical neural networks, and representation learning.
 
 For the summer, I am a visiting researcher at the [Naval Postgraduate School](https://nps.edu/) in Monterey, California, where I am studying optimization landscapes of tropical artificial neural networks and their applications to combinatorial optimization problems. Back at Bowdoin, I lead the Quiz Bowl team and am a Learning Assistant and Quantitative Tutor at the Baldwin Center for Learning and Teaching.
 
