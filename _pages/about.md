@@ -9,12 +9,11 @@ redirect_from:
 
 Hi! My name is Richard Lim, and I'm a rising senior at Bowdoin College majoring in Computer Science and Mathematics and recent honors graduate of the [Budapest Semesters in Mathematics](https://www.budapestsemesters.com/). My research interests include optimization geometry, tropical neural networks, and representation learning.
 
-For the summer, I am a visiting researcher at the [Naval Postgraduate School](https://nps.edu/) in Monterey, California, where I am studying optimization landscapes of tropical artificial neural networks and their applications to combinatorial optimization problems. Back at Bowdoin, I lead the Quiz Bowl team and am a Learning Assistant and Quantitative Tutor at the Baldwin Center for Learning and Teaching.
+Currently, I am a visiting researcher at the [Naval Postgraduate School](https://nps.edu/) in Monterey, California, where I am studying tropical neural networks and their ability to generalize on combinatorial optimization problems. Back at Bowdoin, I lead the Quiz Bowl team and am a Learning Assistant and Quantitative Tutor at the Baldwin Center for Learning and Teaching.
 
 Current Research
 ======
-- **Tropical ANNs and Combinatorial Optimization (upcoming Summer 2026):** Visiting researcher at the [Naval Postgraduate School](https://nps.edu/). Studying optimization landscapes of tropical artificial neural networks and their applications to combinatorial optimization problems. (Advisors: [Ruriko Yoshida, Ph.D.](https://polytopes.net/) and [Kenji Fukumizu, Ph.D.](https://www.ism.ac.jp/~fukumizu/))
-
+- **Functional Convergence Measures on Tropical NNs:** Visiting researcher at the [Naval Postgraduate School](https://nps.edu/). Studying how tropical NNs may generalize better than classical ones using functional convergence measures on unbounded domains (Advisors: [Ruriko Yoshida, Ph.D.](https://polytopes.net/) and [Kenji Fukumizu, Ph.D.](https://www.ism.ac.jp/~fukumizu/))
 
 - **Clustered Mini-batching and Sampling Schemes for Stochastic Optimization:** Developing clustered mini-batching schemes for deep learning to capture local function geometry in high-dimensional optimization landscapes. In collaboration with [HUN-REN Institute for Computer Science and Control (SZTAKI)](https://sztaki.hun-ren.hu/en) in Budapest, Hungary. (Advisors: [Jeová Farias, Ph.D.](https://jeovafarias.github.io/), [András Benczúr, Ph.D.](https://sztaki.hun-ren.hu/en/organisation/departments/ilab/andras-benczur), and [Bálint Zoltán Daróczy, Ph.D.](https://sztaki.hun-ren.hu/en/organisation/departments/ilab/balint-zoltan-daroczy))
 
