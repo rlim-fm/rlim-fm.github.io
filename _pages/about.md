@@ -13,7 +13,7 @@ Currently, I am a visiting researcher at the [Naval Postgraduate School](https:/
 
 Current Research
 ======
-- **Functional Convergence Measures on Tropical NNs:** Visiting researcher at the [Naval Postgraduate School](https://nps.edu/). Studying how tropical NNs may generalize better than classical ones using functional convergence measures on unbounded domains (Advisors: [Ruriko Yoshida, Ph.D.](https://polytopes.net/) and [Kenji Fukumizu, Ph.D.](https://www.ism.ac.jp/~fukumizu/))
+- **Functional Convergence Measures on Tropical NNs:** Visiting researcher at the [Naval Postgraduate School](https://nps.edu/). Studying how tropical NNs may generalize better than classical ones using functional convergence measures on unbounded domains (Advisor: [Ruriko Yoshida, Ph.D.](https://polytopes.net/)
 
 - **Clustered Mini-batching and Sampling Schemes for Stochastic Optimization:** Developing clustered mini-batching schemes for deep learning to capture local function geometry in high-dimensional optimization landscapes. In collaboration with [HUN-REN Institute for Computer Science and Control (SZTAKI)](https://sztaki.hun-ren.hu/en) in Budapest, Hungary. (Advisors: [Jeová Farias, Ph.D.](https://jeovafarias.github.io/), [András Benczúr, Ph.D.](https://sztaki.hun-ren.hu/en/organisation/departments/ilab/andras-benczur), and [Bálint Zoltán Daróczy, Ph.D.](https://sztaki.hun-ren.hu/en/organisation/departments/ilab/balint-zoltan-daroczy))
 
