@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "mint" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Richard Lim"
+title                    : "Richard F. M. Lim"
 title_separator          : "-"
 name                     : &name "Richard Lim"
 description              : &description "Richard Lim's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Richard Lim"
   pronouns         : "He/Him"
-  bio              : "Math/CS undergrad at Bowdoin College. Researching efficient sampling methods for manifold-aware ML and optimization methods for tropical NNs."
+  bio              : "Final year Math/CS undergrad at Bowdoin College. Geometry of generalization in deep learning with a focus on length extrapolation for combinatorial optimization targets using tropical, polyhedral, and optimization geometry."
   location         : "Brunswick, Maine, USA"
   employer         : "Bowdoin College"
   uri              : # URL
@@ -35,7 +35,7 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # URL
+  googlescholar    : https://scholar.google.com/citations?user=KGjOJDUAAAAJ&hl=en&authuser=1
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : # URL
