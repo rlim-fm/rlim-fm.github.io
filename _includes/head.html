@@ -1,16 +1,24 @@
-{% include base_path %}
-
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% include seo.html %}
+{% assign page_title = page.title | default: site.title %}
+{% assign page_description = page.description | default: site.description %}
 
-<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+<title>{{ page_title }}{% if page.title %} {{ site.title_separator }} {{ site.title }}{% endif %}</title>
+<meta name="description" content="{{ page_description | strip_html | strip_newlines | truncate: 160 }}">
+<meta name="author" content="{{ site.author.name }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_description | strip_html | strip_newlines | truncate: 160 }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ site.author.avatar | prepend: '/images/' | absolute_url }}">
+<meta name="twitter:card" content="summary">
 
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-</script>
+<link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="icon" href="{{ '/images/favicon-32x32.png' | relative_url }}" sizes="32x32">
+<link rel="apple-touch-icon" href="{{ '/images/apple-touch-icon-180x180.png' | relative_url }}">
 
-<!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">

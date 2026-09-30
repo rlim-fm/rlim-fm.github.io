@@ -1,0 +1,113 @@
+---
+layout: default
+permalink: /
+redirect_from:
+  - /about/
+  - /about.html
+  - /publications/
+  - /projects/
+  - /news/
+  - /teaching/
+---
+
+<header class="intro">
+  <img class="intro__photo" src="{{ site.author.avatar | prepend: '/images/' | relative_url }}"
+       alt="{{ site.author.name }}" width="180" height="180">
+  <div class="intro__text">
+    <h1>{{ site.author.name }}{% if site.author.name_zh %}<span class="intro__name-sep" aria-hidden="true">&middot;</span><span class="intro__name-zh">{{ site.author.name_zh }}</span>{% endif %}</h1>
+    <p class="intro__bio">
+      Final-year Mathematics and Computer Science undergraduate at
+      <a href="https://www.bowdoin.edu/">Bowdoin College</a> and recent honors graduate of the
+      <a href="https://www.budapestsemesters.com/">Budapest Semesters in Mathematics</a>. I study the
+      geometry of generalization in deep learning, with a focus on length extrapolation for
+      combinatorial optimization targets using tropical, polyhedral, and optimization geometry.
+    </p>
+    <p class="intro__bio">
+      I am currently a visiting researcher at the <a href="https://nps.edu/">Naval Postgraduate
+      School</a> in Monterey, California. Previously I worked on Sign2vec, an expressive embedding
+      space for American Sign Language using spatio-temporal graph convolutional networks, and on the
+      role of age and phonology in memory search using computational models of semantic retrieval.
+    </p>
+
+    <nav class="links" aria-label="Profiles and contact">
+      <a class="links__item" href="{{ '/files/CV.pdf' | relative_url }}">CV</a>
+      <a class="links__item" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">LinkedIn</a>
+      <a class="links__item" href="https://github.com/{{ site.author.github }}">GitHub</a>
+      <a class="links__item" href="mailto:{{ site.author.email }}">Email</a>
+      <a class="links__item" href="{{ site.author.googlescholar }}">Google Scholar</a>
+    </nav>
+  </div>
+</header>
+
+{% if site.data.news and site.data.news.size > 0 %}
+<section class="section" id="news">
+  <h2>News</h2>
+  <ul class="news">
+    {% for item in site.data.news %}
+    <li class="news__item">
+      <span class="news__date">{{ item.date | date: "%b %Y" }}</span>
+      <span class="news__text">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% assign projects = site.projects | sort: "date" | reverse %}
+{% if projects.size > 0 %}
+<section class="section" id="projects">
+  <h2>Projects</h2>
+  {% for project in projects %}
+  <article class="proj">
+    {% if project.image %}
+    <div class="proj__figure">
+      <img src="{{ project.image | relative_url }}" alt="{{ project.image_alt | default: project.title }}" loading="lazy">
+    </div>
+    {% endif %}
+    <div class="proj__body">
+      <h3 class="proj__title">
+        {% if project.links.paper %}<a href="{{ project.links.paper }}">{{ project.title }}</a>
+        {% elsif project.links.arxiv %}<a href="{{ project.links.arxiv }}">{{ project.title }}</a>
+        {% else %}{{ project.title }}{% endif %}
+      </h3>
+
+      {% if project.authors or project.venue %}
+      <p class="proj__meta">
+        {% if project.authors %}{{ project.authors }}{% endif %}
+        {% if project.authors and project.venue %} &middot; {% endif %}
+        {% if project.venue %}<em>{{ project.venue }}</em>{% endif %}
+      </p>
+      {% endif %}
+
+      {% if project.advisors and project.advisors.size > 0 %}
+      <p class="proj__people">
+        <span class="proj__role">{% if project.advisors.size == 1 %}Advisor{% else %}Advisors{% endif %}:</span>
+        {% for person in project.advisors %}{% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+      </p>
+      {% endif %}
+
+      {% if project.collaborators and project.collaborators.size > 0 %}
+      <p class="proj__people">
+        <span class="proj__role">{% if project.collaborators.size == 1 %}Collaborator{% else %}Collaborators{% endif %}:</span>
+        {% for person in project.collaborators %}{% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+      </p>
+      {% endif %}
+
+      <div class="proj__description">{{ project.content | markdownify }}</div>
+
+      {% if project.links %}
+      {% assign link_keys = "paper,arxiv,code,poster,slides,bibtex" | split: "," %}
+      <p class="links links--pub">
+        {% for key in link_keys %}
+          {% assign url = project.links[key] %}
+          {% if url and url != "" %}
+          <a class="links__item" href="{{ url }}">{% case key %}{% when 'arxiv' %}arXiv{% when 'bibtex' %}BibTeX{% else %}{{ key | capitalize }}{% endcase %}</a>
+          {% endif %}
+        {% endfor %}
+      </p>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</section>
+{% endif %}

@@ -1,0 +1,24 @@
+# Newest first. `text` is rendered as Markdown, so links and emphasis work.
+- date: 2026-09-01
+  text: >-
+    My paper with Ruriko Yoshida, ["On the Representational Geometry of Dynamic Programs"](https://arxiv.org/abs/2608.25034),
+    was accepted to the [NeurIPS 2026 Workshop on Symmetry and Geometry in Neural Representations (NeurReps)](https://neurreps.org/)!
+    
+- date: 2026-06-01
+  text: >-
+    I will be giving a guest lecture titled "Learning Algorithms, Not Answers: A Framework for Length-OOD
+   Generalization on Dynamic Programming Problems" at the Naval Postgraduate School, Workshop in Operations Research/Systems Analysis
+
+- date: 2026-05-01
+  text: >-
+    I will be giving an invited talk titled "k-Neighborhood Aware Sampling for manifold-
+    and distribution-aware learning" at the [HUN-REN AI Symposium](https://hun-ren.hu/ai-symposium/)
+    in Budapest, Hungary. (Invited by Dr. András Benczúr)
+
+- date: 2026-03-01
+  text: >-
+    I will be giving an invited talk titled "Clustered Mini-batching and Sampling Schemes for
+    Efficient Gradient Descent on Pairwise Loss Landscapes" at the Artificial Intelligence
+    Laboratory, [HUN-REN Institute for Computer Science and Control (SZTAKI)](https://sztaki.hun-ren.hu/en)
+    in Budapest, Hungary. (Invited by Dr. András Benczúr and Bálint Zoltán Daróczy)
+

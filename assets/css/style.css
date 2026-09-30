@@ -1,0 +1,280 @@
+/* ==========================================================================
+   Richard F. M. Lim — single-page site
+   Palette seeded from the old "mint" theme.
+   ========================================================================== */
+
+/* Chinese characters render in KaiTi; Latin text is unaffected because the
+   unicode-range limits this family to CJK blocks. src is local-only — no webfont
+   is downloaded, so this degrades to the normal fallback where KaiTi is absent. */
+@font-face {
+  font-family: "KaiTi CJK";
+  src: local("Kaiti SC"), local("KaitiSC"), local("STKaitiSC-Regular"),
+       local("Kaiti TC"), local("STKaitiTC-Regular"), local("STKaiti"),
+       local("Kaiti"), local("KaiTi"), local("KaiTi_GB2312"),
+       local("BiauKai"), local("DFKai-SB"), local("AR PL UKai CN"),
+       local("\6977\4F53");
+  unicode-range: U+2E80-2EFF, U+3000-303F, U+3040-30FF, U+3200-33FF,
+                 U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F,
+                 U+FF00-FFEF, U+20000-2A6DF, U+2A700-2EBEF;
+  font-display: swap;
+}
+
+:root {
+  --bg: #f3f6f6;
+  --surface: #ffffff;
+  --text: #40514e;
+  --text-muted: #5c6d6a;
+  --accent: #11999e;
+  --accent-hover: #0d7377;
+  --border: #d0d7d6;
+  --radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1b2422;
+    --surface: #222d2b;
+    --text: #dbe3e1;
+    --text-muted: #a3b2af;
+    --accent: #30e3ca;
+    --accent-hover: #6cf0dd;
+    --border: #3a4745;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #1b2422;
+  --surface: #222d2b;
+  --text: #dbe3e1;
+  --text-muted: #a3b2af;
+  --accent: #30e3ca;
+  --accent-hover: #6cf0dd;
+  --border: #3a4745;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "KaiTi CJK", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
+  /* Don't hyphenate short words or acronyms (SZTAKI must not become SZ-TAKI):
+     require an 8-character word, 4 characters before the break, 3 after. */
+  hyphenate-limit-chars: 8 4 3;
+}
+
+/* Headings and UI chrome stay flush left; only running prose is justified. */
+h1, h2, h3,
+.links,
+.news__date,
+.proj__meta,
+.proj__people {
+  text-align: left;
+  hyphens: manual;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover, a:focus { color: var(--accent-hover); text-decoration: underline; }
+
+img { max-width: 100%; height: auto; }
+
+/* --------------------------------------------------------------- layout --- */
+
+.page {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 3rem 1rem 1rem;
+}
+
+.section { margin-top: 3rem; }
+
+h1, h2, h3 { line-height: 1.25; }
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.9rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+/* ---------------------------------------------------------------- intro --- */
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+
+.intro__photo {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.intro__text { flex: 1 1 18rem; min-width: 0; }
+
+.intro__bio, .news__text, .proj__body { overflow-wrap: break-word; }
+
+.intro__name-sep {
+  margin: 0 0.45rem;
+  font-weight: 400;
+}
+
+/* KaiTi has no bold face, so synthetic bold would smear the strokes; regular
+   weight is deliberate. Color matches the English name. */
+.intro__name-zh { font-weight: 400; }
+
+.intro__bio { margin: 0 0 0.75rem; }
+
+/* ---------------------------------------------------------------- links --- */
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+}
+
+.links__item {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.links__item:hover, .links__item:focus {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.links--pub { margin-top: 0.75rem; }
+
+/* ----------------------------------------------------------------- news --- */
+
+.news { margin: 0; padding: 0; list-style: none; }
+
+.news__item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.75rem;
+  padding: 0.4rem 0;
+}
+
+.news__date {
+  flex: 0 0 5rem;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.15rem;
+}
+
+.news__text { flex: 1 1 16rem; min-width: 0; }
+
+/* --------------------------------------------------------- projects ------ */
+
+.proj {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.proj:first-of-type { border-top: 0; padding-top: 0; }
+
+.proj__figure { flex: 0 0 11rem; }
+
+.proj__figure img {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.proj__body { flex: 1 1 18rem; min-width: 0; }
+
+.proj__title { margin: 0 0 0.3rem; font-size: 1.05rem; }
+
+.proj__meta,
+.proj__people {
+  margin: 0 0 0.3rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.proj__role { font-weight: 600; }
+
+.proj__description { margin-top: 0.6rem; }
+
+.proj__description p { margin: 0 0 0.6rem; }
+
+.proj__description p:last-child { margin-bottom: 0; }
+
+/* --------------------------------------------------------------- footer --- */
+
+.site-footer {
+  max-width: 46rem;
+  margin: 3rem auto 0;
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.site-footer p { margin: 0; }
+
+/* ----------------------------------------------------------- responsive --- */
+
+@media (max-width: 34rem) {
+  .page { padding-top: 2rem; }
+
+  .intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .intro__photo { width: 128px; height: 128px; }
+
+  .intro__text { flex: 1 1 100%; }
+
+  .news__item { gap: 0.15rem 0; }
+
+  .news__date { flex: 1 1 100%; }
+
+  .news__text { flex: 1 1 100%; }
+
+  .proj__figure { flex: 1 1 100%; }
+
+  .proj__body { flex: 1 1 100%; }
+}
