@@ -27,4 +27,4 @@ In collaboration with the
 Budapest, Hungary.
 A growing body of work focuses on aligning losses to the local analytic geometry of target functions (Rame et al., 2023, Zha et al. 2023, Zhu et al., 2025). 
 However, uniform sampling and mini-batching assumes that the global geometry does not conflict with local geometry. 
-We design k-Neighborhood Aware Sampling (k-NAS), a mini-batching scheme that builds localized mini-batches controlled by a softmax temperature hyperparameter.
+We design k-Neighborhood Aware Sampling (k-NAS), a mini-batching scheme that builds localized mini-batches controlled by a softmax temperature hyperparameter. Preliminary results suggest moderate improvement on noisy reconstruction tasks for Implicit Neural Representations (INR).
